@@ -23,13 +23,13 @@ beforeEach(() => {
             cy.get('#search-button').click()
             cy.get('#results-section > p').should('contain', 'Filme não encontrado.')
     });
-    it.only('Deve limpar após uma busca', () => {
+    it('Deve limpar após uma busca', () => {
             cy.get('#search-input').type('Inception')
             cy.get('#search-button').click()
             cy.get('#clear-button').click()
             cy.get('#results-section > :nth-child(1)').should('have.length', 0)
     });
-    
+
     
 
 })
