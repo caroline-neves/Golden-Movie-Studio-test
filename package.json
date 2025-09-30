@@ -4,8 +4,9 @@
   "description": "Meus estudos e práticas de testes na Jornada QA da EBAC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run --browser chrome"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",

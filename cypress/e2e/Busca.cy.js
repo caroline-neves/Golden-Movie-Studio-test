@@ -4,6 +4,9 @@ beforeEach(() => {
   cy.visit('/')
   
 });//Execução antes de cada teste
+afterEach(() => {
+    cy.screenshot()
+});
 
     it('Deve buscar filme com sucesso', () => {
         cy.get('#search-input').type('Matrix')

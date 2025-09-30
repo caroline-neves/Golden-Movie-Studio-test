@@ -5,6 +5,9 @@ beforeEach(() => {
   cy.visit('/')
   
 });//Execução antes de cada teste
+afterEach(() => {
+    cy.screenshot()
+});
 
   it('Deve fazer o cadastro de campos obrigatórios', () => {
     var email = `carol${Date.now()}@gmail.com`
